@@ -8,4 +8,4 @@ User can: <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   1) Add an expense <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   2) Add allowance <br/> <br/>
   
-<i>SharedPreferences</i> technology is used to persist the current balance of money after app minimization or exit.
+<i>SharedPreferences</i> technology is used to persist the current balance of money after app minimization or close.
