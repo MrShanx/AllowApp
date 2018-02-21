@@ -8,4 +8,5 @@ User can: <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   1) Add an expense <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   2) Add allowance <br/> <br/>
   
+The log text area is updated with new transactions. <br/>  
 <i>SharedPreferences</i> technology is used to persist the current balance of money after app minimization or close.
