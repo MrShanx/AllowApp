@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.donbaws.myfirstapp.MainActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:columnCount="1"
+        android:rowCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.244">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="1">
+
+            <TextView
+                android:id="@+id/textViewDesc1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:focusable="false"
+                android:text="Remaining: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/allowance_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:focusable="false"
+                android:padding="5dp"
+                android:text="Allowance goes here"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@android:color/background_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="97dp" />
+
+        </GridLayout>
+
+        <ScrollView
+            android:id="@+id/scroller_id"
+            android:layout_width="fill_parent"
+            android:layout_height="345dp"
+            android:fillViewport="true"
+            android:scrollbars="vertical">
+
+            <EditText
+                android:id="@+id/user_log_textArea"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/colorAccent"
+                android:focusable="false"
+                android:gravity="left|top"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/white"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="86dp" />
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:columnCount="2"
+                android:rowCount="1">
+
+                <Button
+                    android:id="@+id/income_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorPrimary"
+                    android:elevation="10dp"
+                    android:padding="12dp"
+                    android:text="Add Allowance"
+                    android:textColor="@android:color/darker_gray"
+                    android:visibility="visible"
+                    tools:layout_editor_absoluteX="215dp"
+                    tools:layout_editor_absoluteY="181dp" />
+
+                <Button
+                    android:id="@+id/expense_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorPrimary"
+
+                    android:elevation="10dp"
+                    android:padding="12dp"
+                    android:text="Add Expense"
+                    android:textColor="@android:color/darker_gray"
+                    android:textColorLink="@android:color/darker_gray"
+                    android:visibility="visible"
+                    tools:layout_editor_absoluteX="353dp"
+                    tools:layout_editor_absoluteY="94dp" />
+
+            </GridLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:padding="0dp"
+            android:text="Reset"
+            android:layout_gravity="right"
+            android:textColor="@android:color/darker_gray"
+            android:textColorLink="@android:color/darker_gray" />
+
+    </GridLayout>
+
+</android.support.constraint.ConstraintLayout>
